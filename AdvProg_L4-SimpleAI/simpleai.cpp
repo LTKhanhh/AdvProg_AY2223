@@ -28,6 +28,11 @@ vector<string> filterWordsByLen(int wordLen, const vector<string>& vocabulary)
 {
     vector<string> answer;
     //Write your code here
+    for(auto i:vocabulary){
+        if(i.length()==wordLen){
+            answer.push_back(i);
+        }
+    }
     return answer;
 }
 
@@ -42,6 +47,7 @@ char nextCharWhenWordIsNotInDictionary(const set<char>& selectedChars)
 {
     char answer;
     //Write your code here
+
     return answer;
 }
 
