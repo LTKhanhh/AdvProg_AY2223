@@ -158,6 +158,7 @@ bool isWholeWord(const string& mask)
         answer = 0;
          break;
     }
+    return answer;
 }
 
 /***
