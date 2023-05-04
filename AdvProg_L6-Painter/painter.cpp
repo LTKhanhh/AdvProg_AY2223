@@ -51,7 +51,7 @@ void Painter::jumpBackward(int numPixel)
 void Painter::turnLeft(double degree)
 {
     // TODO: rotate left the painter  
-	const double maxAngle = 360;
+	 const double maxAngle = 360;
     double currentAngle = this->angle + degree;
 
     while(currentAngle > 360)
@@ -59,7 +59,11 @@ void Painter::turnLeft(double degree)
 
     while(currentAngle < 0)
         currentAngle += maxAngle;
-	setAngle(currentAngle);
+
+    if(currentAngle > 270)
+        currentAngle -= 360;
+
+    setAngle(currentAngle);
 }
 
 
