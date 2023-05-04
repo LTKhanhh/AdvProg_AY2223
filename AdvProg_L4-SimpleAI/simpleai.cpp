@@ -137,6 +137,7 @@ bool isCorrectChar(char ch, const string& mask)
             break;
         }
     }
+    return answer;
 }
 
 /***
@@ -186,6 +187,7 @@ bool wordConformToMask(const string& word, const string& mask, char ch)
             break;
         }
     }
+    return answer;
 }
 
 /***
